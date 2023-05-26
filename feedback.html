@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>WARNER BROS</title>
+</head>
+<body>
+    <div class="container">
+    
+        <header class="header">
+            <!-- Header content -->
+            <nav class="nav-bar">
+              <div class="navbar-logo">
+              </div>
+              
+              <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">Tv Shows</a></li>
+                <li><a href="collection.html">Collections</a></li>
+                <li><a href="#">Games&Apps</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <main class="feedback-content">
+            <H1>Feedback Form</H1>
+            <br>
+            <br>
+            <FORM action="thankyou.html" method="post" enctype="text/plain" onsubmit="redirectTothankyou()">
+              First Name : <INPUT type="text" name="firstname" placeholder="Enter name here">
+                <br>
+                <br>
+              Second Name : <INPUT type="text" name="secondname"  placeholder="Enter surname here">
+              <BR>
+              <BR>
+              <!--It's important that both of these radio button have the same name so they behave as one component (i.e. Only one can be selected at a time)-->  
+              <INPUT type="radio" name="gender" value="male">Male<BR><br>
+              <INPUT type="radio" name="gender" value="female">Female  
+              <BR>
+              <BR>
+              <!--This uses the new HTML "email" INPUT type which will automatically validates the email address when the SUBMIT button is clicked-->
+              email: <INPUT type="email" name="mail" placeholder="e-mail address">
+              <BR>
+              <BR>
+                Comment :<BR> <br>       
+                <TEXTAREA rows="6" cols="50" name="commentfield"></TEXTAREA>
+                <BR>
+                <SELECT name="countychooser">
+                  <OPTION value="cork">Cork</OPTION>
+                  <OPTION value="dublin">Dublin</OPTION>
+                  <OPTION value="galway">Galway</OPTION>
+                  <OPTION value="kerry">Kerry</OPTION>
+                </SELECT>
+                <BR>
+                <BR>
+                  <button type="submit">Submit</button>
+                <INPUT TYPE="reset" value="Reset">
+            </FORM>
+          </main>  
+  
+      </div>
+
+    <!--scripts -->
+
+    <script src="main.js/script.js"></script>
+</body>
+</html>
